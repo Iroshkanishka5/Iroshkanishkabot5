@@ -17,7 +17,7 @@ try {
   low = require('lowdb')
 } catch (e) {
   low = require('./lib/lowdb')
-}
+}true
 
 const { Low, JSONFile } = low
 const mongoDB = require('./lib/mongoDB')
@@ -26,7 +26,7 @@ global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.
 
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
-global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
+global.opts = English Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 global.db = new Low(
   /https?:\/\//.test(opts['db'] || '') ?
     new cloudDBAdapter(opts['db']) : /mongodb/.test(opts['db']) ?
@@ -34,12 +34,12 @@ global.db = new Low(
       new JSONFile(`database/database.json`)
 )
 global.db.data = {
-    users: {},
+    users: {Irosh kanishka },
     chats: {},
-    database: {},
+    database: {iroshkanishka650@gmail.com},
     game: {},
     settings: {},
-    others: {},
+    others: {94777293500},
     sticker: {},
     ...(global.db.data || {})
 }
